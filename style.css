@@ -23,6 +23,20 @@ body {
     border-radius: 0.5em;
 }
 
+/* Things related to Pokedoro Title at the top left */
+header {
+    text-align: left;
+    padding: 3em;
+}
+
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+
 button {
     border: none;
     outline: none;
@@ -36,13 +50,30 @@ button {
 }
 
 .btn {
-    padding: 1em 2em;
+    padding: 0.5em 2em;
     border-radius: 0.5em;
     background-color: #6db8ff;
     color: white;
+    font-size: 15px;
 }
+
+/*represent active or clicked upon button*/
 
 .btn-active {
     background-color: #4c67ff;
     color: white;
+    font-weight: 1000;
+}
+
+.time-btn-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+#time {
+    text-align: center;
+    color: white;
+    font-size: 5em;
+    font-weight: 600;
 }
