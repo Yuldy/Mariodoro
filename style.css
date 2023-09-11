@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    --body-background-color: #5e91ff;
+    background-color: var(--body-background-color)
+}
+
+.container {
+    /* We want to make the container color the same as the background but lighter*/
+    /*background-color: rgba(var(--body-background-color-), 0.4); */
+    background-color: #6db8ff;
+    width: min(90%, 500px);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 4em 2em;
+    border-radius: 0.5em;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.section-container {
+    display: flex;
+    gap: lem;
+    justify-content: center;
+}
+
+.btn {
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    background-color: #6db8ff;
+    color: white;
+}
+
+.btn-active {
+    background-color: #4c67ff;
+    color: white;
+}
