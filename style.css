@@ -52,7 +52,7 @@ button {
 .btn {
     padding: 0.5em 2em;
     border-radius: 0.5em;
-    background-color: #6db8ff;
+    background-color: transparent;
     color: white;
     font-size: 15px;
 }
@@ -74,6 +74,39 @@ button {
 #time {
     text-align: center;
     color: white;
-    font-size: 5em;
+    font-size: 8em;
     font-weight: 600;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+#btn-start,
+#btn-pause {
+    padding: 1em 2em; 
+    border-radius: 0.5em;
+    cursor: pointer;
+    background-color: white;
+    width: 220px;
+    font-size: 20px;
+    font-weight: 1000;
+    color: #4c67ff;
+}
+
+#btn-reset {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 2em;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
 }
