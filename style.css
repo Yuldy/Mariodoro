@@ -6,32 +6,36 @@
 }
 
 body {
-    --body-background-color: #5e91ff;
-    background-color: var(--body-background-color)
+    background-image: url(assets/supermariobrosbackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; /*prevents image from repeating */
 }
 
 .container {
     /* We want to make the container color the same as the background but lighter*/
     /*background-color: rgba(var(--body-background-color-), 0.4); */
-    background-color: #6db8ff;
     width: min(90%, 500px);
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     padding: 4em 2em;
-    border-radius: 0.5em;
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.1); /* Adjust the alpha value (0.6 in this example) */
+    
 }
 
-/* Things related to Pokedoro Title at the top left */
+/* Things related to Destinydoro Title at the top left */
 header {
-    text-align: left;
+    /* moves it to the center of the title screen */
+    text-align: center;
     padding: 3em;
 }
 
 
 h1 {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     color: white;
 }
@@ -56,6 +60,12 @@ button {
     color: white;
     font-size: 15px;
 }
+
+.btn:hover {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0.5em;
+}
+
 
 /*represent active or clicked upon button*/
 
