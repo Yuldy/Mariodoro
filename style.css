@@ -35,7 +35,7 @@ header {
 
 
 h1 {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     color: white;
 }
@@ -102,7 +102,8 @@ button {
     width: 220px;
     font-size: 20px;
     font-weight: 1000;
-    color: #4c67ff;
+    /* color: #4c67ff; */
+    color: #6185f8;
 }
 
 #btn-reset {

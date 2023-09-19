@@ -1,4 +1,5 @@
 // Gets all the buttons for "Pokedoro, Short Break, and Long Break"
+// This helps us with the hover affects and the active highligher
 const getButtons = document.querySelectorAll('.btn');
 
 // Add click event listeners to each button
@@ -15,7 +16,8 @@ getButtons.forEach(button => {
 });
 
 
-let focusButton = document.getElementById("focus");
+// Variable Declarations for the Program:
+let pomodoroButton = document.getElementById("pomodoro");
 let buttons = document.querySelectorAll(".btn");
 let shortBreakButton = document.getElementById("shortbreak");
 let longBreakButton = document.getElementById("longbreak");
@@ -24,12 +26,13 @@ let resetButton = document.getElementById("btn-reset");
 let pause = document.getElementById("btn-pause");
 let time = document.getElementById("time");
 let set;
-let active = "focus";
+let active = "pomodoro";
 let count = 59;
 let paused = true;
 let minCount = 24;
 time.textContent = `${minCount + 1}:00`;
 
+//values less than 10, 5 -> 05
 const appendZero = (value) => {
   value = value < 10 ? `0${value}` : value;
   return value;
@@ -55,15 +58,16 @@ resetButton.addEventListener(
   })
 );
 
-const removeFocus = () => {
+const removePomdoro = () => {
   buttons.forEach((btn) => {
-    btn.classList.remove("btn-focus");
+    btn.classList.remove("btn-pomodoro");
   });
 };
 
-focusButton.addEventListener("click", () => {
-  removeFocus();
-  focusButton.classList.add("btn-focus");
+pomodoroButton.addEventListener("click", () => {
+  active = "pomodoro"; // Set the active mode
+  // removePomodoro();
+  pomodoroButton.classList.add("btn-pomodoro");
   pauseTimer();
   minCount = 24;
   count = 59;
@@ -71,9 +75,9 @@ focusButton.addEventListener("click", () => {
 });
 
 shortBreakButton.addEventListener("click", () => {
-  active = "short";
-  removeFocus();
-  shortBreakButton.classList.add("btn-focus");
+  active = "short"; // Set the active mode
+  // removePomodoro();
+  shortBreakButton.classList.add("btn-pomodoro");
   pauseTimer();
   minCount = 4;
   count = 59;
@@ -81,9 +85,9 @@ shortBreakButton.addEventListener("click", () => {
 });
 
 longBreakButton.addEventListener("click", () => {
-  active = "long";
-  removeFocus();
-  longBreakButton.classList.add("btn-focus");
+  active = "long"; // Set the active mode
+  // removePomodoro();
+  longBreakButton.classList.add("btn-pomodoro");
   pauseTimer();
   minCount = 14;
   count = 59;
