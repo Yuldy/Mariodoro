@@ -14,7 +14,7 @@
 - [License](#license)
 
 ## Overview
-<img alt="Mariodoro in action" src=".github/MariodoroGitHubScreenshot.png" width="800px">
+![Mariodoro Preview](https://github.com/Yuldy/Mariodoro/blob/main/MariodoroGitHubScreenshot.png)
 Mariodoro is a simple Pomodoro timer that provides a visually pleasing Mario theme and a reliable way to track productivity using the Pomodoro Technique.
 
 
